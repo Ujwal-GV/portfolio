@@ -260,7 +260,7 @@ button{
     position: absolute;
     width: calc(100% + 15px);
     height: 1.8rem;
-    background-color: rgb(85, 81, 81);
+    background-color: rgb(58, 54, 54);
     border-left: 2px solid white;
     right: -10px;
     animation: cursor .8s infinite, typing 20s steps(11) infinite;
