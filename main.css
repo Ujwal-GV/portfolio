@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: rgb(58, 54, 54);
     min-height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -408,4 +410,48 @@ button{
     color: cadetblue;
     transition: 0.5s;
     box-shadow: 0 0 5px black;
+}
+
+footer{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 50px 40px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px white;
+    position: sticky;
+    z-index: 80;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.foot li{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.mail, .phone, .address{
+    text-transform: uppercase;
+}
+
+.foot li span{
+    display: flex;
+    justify-content: baseline;
+}
+
+.foot li span a{
+    font-weight: 100;
+    color: aliceblue;
+    text-decoration: none;
 }
