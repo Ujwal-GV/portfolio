@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>PHOTOGRAPHY</title>
+    <title>Portfolio|Home</title>
 </head>
 <body>
     <header>
@@ -12,10 +12,10 @@
         <div class="group">
             <ul class="navBar">
                 <li><a href="main.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="search">
                 <span class="icon">
@@ -31,11 +31,11 @@
     </header>
     <div class="content" id="images">
         <div class="photoContainer">
-            <div><img class="slidePhoto" src="images/1.jpeg" alt="Slide 1"></div>
-            <img class="slidePhoto" src="images/2.jpeg" alt="Slide 2">
-            <img class="slidePhoto" src="images/3.jpeg" alt="Slide 3">
-            <img class="slidePhoto" src="images/4.jpeg" alt="Slide 4">
-            <img class="slidePhoto" src="images/5.jpeg" alt="Slide 5">
+            <div><img class="slidePhoto" src="images/1.jpeg" alt="Slide 1" draggable="false"></div>
+            <img class="slidePhoto" src="images/2.jpeg" alt="Slide 2" draggable="false">
+            <img class="slidePhoto" src="images/3.jpeg" alt="Slide 3" draggable="false">
+            <img class="slidePhoto" src="images/4.jpeg" alt="Slide 4" draggable="false">
+            <img class="slidePhoto" src="images/5.jpeg" alt="Slide 5" draggable="false">
         </div>
     </div>
 
@@ -75,8 +75,17 @@
         </div>
     </div>
 
+    <footer>
+        <div class="logo" id="contact">CONTACT US</div>
+            <ol class="foot">
+                <li><span class="mail">Email</span><span><a href="mailto://somebody@gmail.com"><i>somebody@gmail.com</i></a></span></li>
+                <li><span class="phone">Phone</span><span><a href="tel:+7483267890"><i>+91 9874560125</i></a></span></li>
+                <li><span class="address">Address</span><span><a href=""><i>#12, Housing Board<br>Bengaluru</i></a></span></li>
+            </ol>
+    </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <script>
     let searchBtn = document.querySelector('.searchBtn');
