@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio|Gallery</title>
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
@@ -12,10 +12,9 @@
         <div class="group">
             <ul class="navBar">
                 <li><a href="main.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
             <ion-icon name="grid-outline" class="menuBar"></ion-icon>
         </div>
@@ -118,5 +117,17 @@
             </div>
         </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+    let menuBar = document.querySelector('.menuBar');
+    let header = document.querySelector('header');
+    let navBar = document.querySelector('.navBar');
+        menuBar.onclick = function(){
+        header.classList.toggle('open');
+    }
+    </script>
 </body>
 </html>
